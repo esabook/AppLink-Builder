@@ -6,10 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
+    "redirects": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/link/:host/:path*",
+        "destination": "https://mytw.page.link/?link=https://:host/:path&apn=com.twitter.android&isi=333903271&ibi=twitter&efr=1",
+        "type": 301
+      },
+      {
+        "source": "/dev/:path*",
+        "destination": "/link/mytw.dev/:path",
+        "type": 301
+      },
+      {
+        "source": "/:path*",
+        "destination": "/link/mytw.com/:path",
+        "type": 301
       }
     ]
   }
