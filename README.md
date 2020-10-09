@@ -2,7 +2,7 @@
 
 Dynamic link wrapper
 original uri:
-https://www.bareksa.com/path/path2?param
+https://www.twitter.com/path/path2?param
 
 replacement:
 <this-app-domain-name>/?<original-uri>
